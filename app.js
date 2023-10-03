@@ -1,4 +1,4 @@
-// we can pass in arguments or parameters
+/* // we can pass in arguments or parameters
 // whatever you write in the test() does not matter
 function test(mess) {
     console.log("mess");
@@ -35,3 +35,4 @@ function calc(){
     console.log(sum);
 }
 calc();
+ */
