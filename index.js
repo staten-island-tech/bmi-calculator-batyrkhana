@@ -1,8 +1,30 @@
-function BMICalculator (user_height_meters, user_weight) {
-    return (user_weight / (user_height_meters)^2)
+function BMICalculate (user_height, user_weight) {
+    const BMI = ((user_weight / (user_height)(user_height))*10000);
+    return BMI;
 }
-let user_height = Number(prompt("Please enter your height in centimeters:"))
-let user_weight = Number(prompt("Please enter your weight in kilograms:"))
+
+const user_name = String(prompt("Please enter your name:"));
+const user_height = Number(prompt("Please enter your height in centimeters:"));
+const user_weight = Number(prompt("Please enter your weight in kilograms:"));
+const BMI = BMICalculate(user_height, user_weight);
+
+function BMIRange(BMI){
+    if(BMI <= 18.5){
+        return "You are Underweight, consider eating your breakfast, lunch, and dinner.";
+    }
+    else if(BMI >= 30){
+        return "You are in the Obese Range, consider being more thoughtful about your nutrition.";
+    }
+    else if(BMI >= 18.5 && BMI <= 24.9999){
+        return "You are Healthy, keep it up :)";
+    }
+    else if(BMI <= 29.999 && bmi >= 25){
+        return "You are Overweight, change a couple of things and you'll be okay.";
+    }
+    else{
+        return "Error";
+    }
+}
 
 /* function getBMI(x,y){
     return 20;
