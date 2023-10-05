@@ -1,6 +1,5 @@
 function BMICalculate (user_height, user_weight) {
-    const BMI = ((user_weight / (user_height)(user_height))*10000);
-    return BMI;
+    return (user_weight / (user_height * user_height))*10000
 }
 
 const user_name = String(prompt("Please enter your name:"));
@@ -18,19 +17,17 @@ function BMIRange(BMI){
     else if(BMI >= 18.5 && BMI <= 24.9999){
         return "You are Healthy, keep it up :)";
     }
-    else if(BMI <= 29.999 && bmi >= 25){
+    else if(BMI <= 29.999 && BMI >= 25){
         return "You are Overweight, change a couple of things and you'll be okay.";
     }
     else{
         return "Error";
     }
 }
-
+console.log ("Hello, " + user_name + " Your BMI is: " + BMI + " " + BMIRange(BMI))
 /* function getBMI(x,y){
     return 20;
 } */
-
-
 /* // conditional statements if/else if/else
 function check(x,y){
     if(x === "horse") {
